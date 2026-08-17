@@ -3,7 +3,7 @@ conda activate langchain_agent
 pip install -r requirements.txt
 
 Steps:
-1.Envirornment Setup
+1.Envirornment Setup and Folder structure
 2.Create tools
 3.Create Agents
 4.Create Pipeline
