@@ -34,15 +34,18 @@ def run_research_pipeline(topic:str)-> dict:
     print("\nscraped content: \n", state['scraped_content'])
 
 
-    #step 3 - writer chain 
+  # step 3 - writer chain 
 
     print("\n"+" ="*50)
     print("step 3 - Writer is drafting the report ...")
     print("="*50)
 
+    # Access scraped content from the state dictionary and truncate it
+    scraped_content_truncated = state['scraped_content'][:3000]
+    
     research_combined = (
         f"SEARCH RESULTS : \n {state['search_results']} \n\n"
-        f"DETAILED SCRAPED CONTENT : \n {state['scraped_content']}"
+        f"DETAILED SCRAPED CONTENT : \n {scraped_content_truncated}"
     )
 
     state["report"] = writer_chain.invoke({
@@ -50,8 +53,7 @@ def run_research_pipeline(topic:str)-> dict:
         "research" : research_combined
     })
 
-    print("\n Final Report\n",state['report'])
-
+    print("\n Final Report\n", state['report'])
 
     #critic report 
 
