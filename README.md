@@ -1,4 +1,4 @@
-🔬 # LangChain Multi-Agent Research Assistant
+# 🔬 LangChain Multi-Agent Research Assistant
 
 An AI-powered Multi-Agent Research Assistant built with LangChain, Streamlit, Tavily, and web-scraping tools.
 
@@ -92,7 +92,7 @@ The feedback can be used to identify weaknesses, missing information, or areas t
 | python-dotenv | Environment variable management |
 | Streamlit | Web interface |
 
-▶️ Running the Application
+### ▶️ Running the Application
 
 Start the Streamlit application:
 
@@ -102,7 +102,7 @@ Then open:
 
 http://localhost:8501
 
-🖥️ Using the Application
+### 🖥️ Using the Application
 
 Open the Streamlit application.
 
