@@ -1,26 +1,26 @@
-🔬 LangChain Multi-Agent Research Assistant
+🔬 # LangChain Multi-Agent Research Assistant
 
 An AI-powered Multi-Agent Research Assistant built with LangChain, Streamlit, Tavily, and web-scraping tools.
 
 The system divides the research workflow into specialized agents. Instead of asking a single LLM to perform the entire task, each agent focuses on a specific responsibility:
 
-Search → Read → Write → Critic
+## Search → Read → Write → Critic
 
 This project is designed to demonstrate an agentic AI architecture where multiple specialized components collaborate to produce a more structured research report.
 
 
-📥 Report Download
+## 📥 Report Download
 
 Allows the generated research report to be downloaded as a Markdown file.
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 <img width="1067" height="393" alt="image" src="https://github.com/user-attachments/assets/740222b5-747f-4c2d-bf41-30f6213f26ef" />
 
 
-🧠 How It Works
+## 🧠 How It Works
 
-1. Search Agent
+### 1. Search Agent
 
 The user provides a research topic.
 
@@ -32,7 +32,7 @@ The Search Agent receives the topic and searches for recent and reliable informa
 
 The search results are passed to the next stage.
 
-2. Reader Agent
+### 2. Reader Agent
 
 The Reader Agent receives the search results and determines which resource is most useful.
 
@@ -48,7 +48,7 @@ Detailed Content
 
 This gives the Writer more context than the search snippets alone.
 
-3. Writer
+### 3. Writer
 
 The Writer receives both:
 
@@ -70,13 +70,13 @@ report = writer_chain.invoke({
 
 The result is the generated research report.
 
-4. Critic
+### 4. Critic
 
 The Critic receives the generated report and evaluates it.
 
 The feedback can be used to identify weaknesses, missing information, or areas that could be improved.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology | Purpose |
 | :--- | :--- |
@@ -123,6 +123,6 @@ Review the results using the different tabs.
 Download the final report as Markdown.
 
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Tayyaba Akhter
