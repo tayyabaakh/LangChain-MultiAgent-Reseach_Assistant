@@ -18,4 +18,4 @@ __pycache__/
 # IDE
 .vscode/
 .idea/
-.test_gemini.py
+.test_gemini.py/
